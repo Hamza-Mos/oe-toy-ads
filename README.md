@@ -2,6 +2,8 @@
 
 This toy app shows sponsor ads while an answer is loading, using a fast embeddings KNN classifier to categorize the user’s question into one of four categories purchased by sponsors. If a strong match is found, we replace the spinner with the corresponding sponsor’s ad; otherwise the spinner remains.
 
+https://github.com/user-attachments/assets/b2261dc3-e19a-4c7a-8e09-9d121ef4fffb
+
 ### Why I used KNN (embeddings) instead of an LLM classifier
 
 - Latency and cost: one small embeddings call per question (text-embedding-3-small) vs an additional chat call. Quicker and cheaper under load.
